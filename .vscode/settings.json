@@ -1,28 +1,27 @@
 {
-    "files.exclude": {
-      "**/.gitignore": true,
-      "**/.eslintcache": true,
-      "**/.next": true,
-      "**/node_modules": true
-    },
-    "editor.fontFamily": "DM Mono, 'Consolas', monospace",
-    "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": false,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorStyle": "line",
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "eslint.codeActionsOnSave.mode": "problems",
-    "eslint.alwaysShowStatus": true,
-    "files.associations": {
-      "*.js": "javascriptreact"
-    },
-    "css.lint.unknownAtRules": "ignore",
-    "tailwindCSS.emmetCompletions": true,
-    "gutterpreview.sourceFolder": "public",
-    "cSpell.words": ["MWBE"]
-  }
-  
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.eslintcache": true,
+    "**/.next": true,
+    "**/node_modules": true
+  },
+  "editor.fontFamily": "DM Mono, 'Consolas', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "line",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.alwaysShowStatus": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.emmetCompletions": true,
+  "gutterpreview.sourceFolder": "public",
+  "cSpell.words": ["MWBE"]
+}

@@ -6,15 +6,25 @@ import ContactLinks from "./ContactLinks";
 
 export const Footer = () => {
   return (
-    <footer className="p-5 bg-black">
-      <CompanyFooter></CompanyFooter>
-      <div>
-        {footerLinksData &&
-          footerLinksData.map((data) => (
-            <FooterLinks linksTitle={data.heading} links={data.links} />
-          ))}
+    <footer className="px-5 py-10 bg-black">
+      <div className="space-y-10 md:flex md:flex-wrap md:space-y-0 md:justify-around">
+        <CompanyFooter></CompanyFooter>
+        <div className="flex flex-wrap justify-between w-full md:max-w-max md:justify-evenly md:space-x-24">
+          {footerLinksData &&
+            footerLinksData.map((data, index) => (
+              <FooterLinks
+                linksTitle={data.heading}
+                links={data.links}
+                key={index}
+              />
+            ))}
+        </div>
+        <ContactLinks></ContactLinks>
       </div>
-      <ContactLinks></ContactLinks>
+      <hr className="w-full h-[2px] bg-gray-500 my-10 border-0" />
+      <p className="text-sm font-light text-center text-gray-300">
+        Copyright 2021 Bi . All Rights Reserved
+      </p>
     </footer>
   );
 };
