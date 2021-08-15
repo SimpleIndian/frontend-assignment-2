@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-20 flex items-center justify-between w-full p-4 bg-black md:p-8 md:fixed ${
+      className={`top-0 z-50 flex items-center justify-between w-full p-4 bg-black md:p-8 md:fixed ${
         NavState ? "md:bg-transparent" : ""
       }`}
     >

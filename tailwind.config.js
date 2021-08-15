@@ -14,6 +14,8 @@ module.exports = {
       }),
       fontFamily: {
         sans: ["Mitr", ...defaultTheme.fontFamily.sans],
+        niviaBold: ["'Nivea Bold'", ...defaultTheme.fontFamily.sans],
+        niviaRegu: ["'Nivea Regular'", ...defaultTheme.fontFamily.sans],
         butler: ["Butler", ...defaultTheme.fontFamily.serif],
       },
     },

@@ -4,7 +4,7 @@ import FooterLinks from "./FooterLinks";
 import { footerLinksData } from "data/footerLinksData";
 import ContactLinks from "./ContactLinks";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="px-5 py-10 bg-black">
       <div className="space-y-10 md:flex md:flex-wrap md:space-y-0 md:justify-around">
@@ -28,3 +28,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
