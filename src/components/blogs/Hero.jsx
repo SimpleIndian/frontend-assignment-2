@@ -9,7 +9,7 @@ const Hero = () => {
           Events
         </h1>
         <p className="flex items-start space-x-3 leading-5 text-gray-300 md:font-medium">
-          <img src="/quote.svg" alt="quote" />
+          <img src="/quote.svg" alt="quote" loading="lazy" />
           <span>
             Veritas ad timenda me nunquid deludat. Cap voce meis ordo sum.
             Probant eam percipi istarum veteris tum meipsum cognitu ope.

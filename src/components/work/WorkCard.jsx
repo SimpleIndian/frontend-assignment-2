@@ -1,9 +1,17 @@
+import { useEffect } from "react";
+import lozad from "lozad";
+
 const WorkCard = () => {
+  
+  useEffect(() => {
+    const { observe } = lozad();
+    observe();
+  }, []);
   return (
     <>
       <div className="items-center md:flex md:justify-evenly">
         <div className="origin-top-left translate-x-3 transform-gpu rotate-2">
-          <img src="/work/card1.png" alt="work" />
+          <img className="lozad" data-src="/work/card1.png" alt="work" />
           <p className="flex items-center text-white origin-top-left -rotate-90 -translate-x-8 transform-gpu">
             Story
             <span className="block w-8 h-[1px] bg-primary ml-2"></span>
@@ -28,7 +36,7 @@ const WorkCard = () => {
       </div>
       <div className="items-center md:flex md:flex-row-reverse md:justify-evenly">
         <div className="origin-top-left -translate-x-3 transform-gpu -rotate-2 max-w-max">
-          <img src="/work/card2.png" alt="work" />
+          <img className="lozad" data-src="/work/card2.png" alt="work" />
           <p className="flex items-center justify-end text-white origin-right -rotate-90 translate-x-4 -translate-y-24 transform-gpu">
             Story
             <span className="block w-8 h-[1px] bg-primary ml-2"></span>
@@ -53,7 +61,7 @@ const WorkCard = () => {
       </div>
       <div className="items-center md:flex md:justify-evenly ">
         <div className="origin-top-left translate-x-3 transform-gpu rotate-2">
-          <img src="/work/card3.png" alt="work" />
+          <img className="lozad" data-src="/work/card3.png" alt="work" />
           <p className="flex items-center text-white origin-top-left -rotate-90 -translate-x-8 transform-gpu">
             Story
             <span className="block w-8 h-[1px] bg-primary ml-2"></span>

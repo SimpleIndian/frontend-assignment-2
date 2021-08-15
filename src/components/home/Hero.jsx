@@ -20,6 +20,7 @@ const Hero = () => {
           <div className="relative w-full">
             <img
               src="/home/hero.png"
+              loading="lazy"
               alt="home background"
               className="min-w-full"
             />
@@ -43,6 +44,7 @@ const Hero = () => {
           <div className="relative w-full">
             <img
               src="/home/hero.png"
+              loading="lazy"
               alt="home background"
               className="min-w-full"
             />

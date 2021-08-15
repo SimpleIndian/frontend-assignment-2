@@ -1,10 +1,6 @@
 import { BsBag, BsThreeDots } from "react-icons/bs";
 import { AiOutlineAlignRight } from "react-icons/ai";
-import {
-  RiSearch2Line,
-  RiShoppingCart2Line,
-  RiArrowRightSLine,
-} from "react-icons/ri";
+import { RiSearch2Line, RiShoppingCart2Line } from "react-icons/ri";
 import NavLinks from "./NavLinks";
 import { navLinksData } from "data/NavLinksData";
 
@@ -25,7 +21,7 @@ const NavMenu = () => {
               key={index}
               dropLinks={data.links}
               hasElements={data.hasElements}
-              isActive={data.isActive}
+              fullLink={data.fullLink}
             />
           ))}
         <div className="flex items-center space-x-4 text-white">

@@ -1,15 +1,22 @@
+import { useEffect } from "react";
+import lozad from "lozad";
+
 const Subscribe = () => {
+  useEffect(() => {
+    const { observe } = lozad();
+    observe();
+  }, []);
   return (
     <section className="ml-auto max-w-[1300px] pb-16 text-white relative pl-8 md:pl-0 h-[400px] md:h-auto">
       <img
-        src="/home/sub.png"
+        data-src="/home/sub.png"
         alt="home women"
-        className="object-cover w-full h-full"
+        className="object-cover w-full h-full lozad"
       />
       <div className="absolute  md:left-[10%] p-4 md:top-1/4 md:w-[700px] top-[10%]">
         <h1 className="flex text-2xl font-extrabold md:text-5xl font-butler">
           <span className="mr-3">
-            <img src="/quote.svg" alt="quote" />
+            <img className="lozad" data-src="/quote.svg" alt="quote" />
           </span>
           Subscribe Our
           <br />
@@ -27,7 +34,7 @@ const Subscribe = () => {
             className="w-full py-3 pl-6 text-black rounded-full outline-none"
           />
           <button className="absolute right-0">
-            <img src="/telegram.svg" />
+            <img className="lozad" data-src="/telegram.svg" alt="telegram" />
           </button>
         </form>
       </div>

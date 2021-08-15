@@ -3,8 +3,15 @@ import Footer from "components/Footer";
 import Hero from "components/project/Hero";
 import ProjectDetail from "components/project/ProjectDetail";
 import ProjectCard from "components/project/ProjectCard";
+import { useEffect } from "react";
+import lozad from "lozad";
 
 const ProjectType = () => {
+  useEffect(() => {
+    const { observe } = lozad();
+    observe();
+  }, []);
+
   return (
     <>
       <Header></Header>
@@ -24,7 +31,7 @@ const ProjectType = () => {
             <p className="text-gray-300 md:text-lg">Nam Scelerisque</p>
             <div className="relative w-64 p-5 m-auto">
               <span className="absolute block w-1 h-20 -top-5 bg-primary left-1/2"></span>
-              <img src="/project/nextp.png" alt="next" />
+              <img data-src="/project/nextp.png" alt="next" className="lozad" />
             </div>
           </div>
         </div>

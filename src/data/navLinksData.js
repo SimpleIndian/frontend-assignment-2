@@ -2,7 +2,8 @@ export const navLinksData = [
   {
     heading: "home",
     hasElements: true,
-    isActive:true,
+    isActive: true,
+    fullLink: "/",
     links: [
       { link: "#", label: "dark" },
       { link: "#", label: "light" },
@@ -12,6 +13,7 @@ export const navLinksData = [
   {
     heading: "works",
     hasElements: true,
+    fullLink: "/works",
     links: [
       { link: "#", label: "featured" },
       { link: "#", label: "normal-caption-1" },
@@ -25,6 +27,7 @@ export const navLinksData = [
   {
     heading: "blog",
     hasElements: true,
+    fullLink: "/blogs",
     links: [
       { link: "#", label: "blog default" },
       { link: "#", label: "blog style 01" },
@@ -33,8 +36,9 @@ export const navLinksData = [
     ],
   },
   {
-    heading: "elements",
+    heading: "projects",
     hasElements: true,
+    fullLink: "/project-type",
     links: [
       { link: "#", label: "slideshow" },
       { link: "#", label: "photo wall" },
@@ -49,6 +53,7 @@ export const navLinksData = [
   {
     heading: "pages",
     hasElements: true,
+    fullLink: "#",
     links: [
       { link: "#", label: "shop", hasArrow: true },
       { link: "#", label: "about us" },

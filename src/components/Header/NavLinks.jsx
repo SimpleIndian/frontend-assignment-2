@@ -1,13 +1,18 @@
 import InLink from "components/shared/InLink";
 import { RiArrowRightSLine, RiArrowDownSLine } from "react-icons/ri";
+import { useRouter } from "next/router";
 
-const NavLinks = ({ navHeading, dropLinks, hasElements,isActive }) => {
+const NavLinks = ({ fullLink, navHeading, dropLinks, hasElements }) => {
+  const router = useRouter();
+
   return (
     <ul className="flex space-x-5 text-white capitalize">
       <li className="relative group">
-        <InLink href="#" className="relative flex items-center">
-          {isActive && (
+        <InLink href={fullLink} className="relative flex items-center">
+          {router.pathname === fullLink ? (
             <span className="absolute top-0 block w-1 h-1 rounded-full bg-primary -left-2" />
+          ) : (
+            ""
           )}
           {navHeading}
           {hasElements && <RiArrowDownSLine color="white" className="ml-1" />}
