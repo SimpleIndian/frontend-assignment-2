@@ -2,7 +2,7 @@ import { BsBag, BsThreeDots } from "react-icons/bs";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { RiSearch2Line, RiShoppingCart2Line } from "react-icons/ri";
 import NavLinks from "./NavLinks";
-import { navLinksData } from "data/NavLinksData";
+import { navLinksData } from "data/navLinksData";
 
 export const IconLink = ({ children }) => {
   return (
