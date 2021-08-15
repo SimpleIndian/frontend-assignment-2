@@ -1,8 +1,8 @@
-const BlogCard = ({ postImg, postTitle, postDescription }) => {
+const BlogCard = ({ postImg, postTitle, postDescription,className }) => {
   return (
-    <div className="overflow-hidden w-[300px] min-h-[520px]">
+    <a href="#" className={`overflow-hidden w-[300px] min-h-[520px] block ${className}`}>
       <img
-        className="object-cover object-center w-full lg:h-48 md:h-36"
+        className="object-cover object-center w-full"
         src={postImg}
         alt="blog"
       />
@@ -21,7 +21,7 @@ const BlogCard = ({ postImg, postTitle, postDescription }) => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
