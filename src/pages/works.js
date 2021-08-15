@@ -2,10 +2,14 @@ import Header from "components/Header";
 import Footer from "components/Footer";
 import Hero from "components/work/Hero";
 import WorkCard from "components/work/WorkCard";
+import Head from "next/head";
 
 const Works = () => {
   return (
     <>
+      <Head>
+        <title>Featured works - Best India</title>
+      </Head>
       <Header></Header>
       <Hero></Hero>
       <section className="bg-black md:pb-40">

@@ -25,7 +25,7 @@ export const navLinksData = [
     ],
   },
   {
-    heading: "blog",
+    heading: "blogs",
     hasElements: true,
     fullLink: "/blogs",
     links: [
@@ -38,7 +38,7 @@ export const navLinksData = [
   {
     heading: "projects",
     hasElements: true,
-    fullLink: "/project-type",
+    fullLink: "/projects",
     links: [
       { link: "#", label: "slideshow" },
       { link: "#", label: "photo wall" },

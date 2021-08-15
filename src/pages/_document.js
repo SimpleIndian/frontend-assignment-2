@@ -14,6 +14,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
         </Head>
         <body className="text-white transition-all bg-black">
           <Main />

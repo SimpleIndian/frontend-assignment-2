@@ -5,6 +5,7 @@ import ProjectDetail from "components/project/ProjectDetail";
 import ProjectCard from "components/project/ProjectCard";
 import { useEffect } from "react";
 import lozad from "lozad";
+import Head from "next/head";
 
 const ProjectType = () => {
   useEffect(() => {
@@ -14,6 +15,9 @@ const ProjectType = () => {
 
   return (
     <>
+      <Head>
+        <title>All projects - Best India</title>
+      </Head>
       <Header></Header>
       <Hero></Hero>
       <section className="bg-[#1D1D1D]">

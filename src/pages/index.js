@@ -6,10 +6,14 @@ import Hero from "components/home/Hero";
 import Magazine from "components/home/Magazine";
 import PhotoGraphy from "components/home/PhotoGraphy";
 import Subscribe from "components/home/Subscribe";
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home page - Best India</title>
+      </Head>
       <Header></Header>
       <Hero></Hero>
       <div className="w-full bg-repeat-y bg-cover bg-hero-pattern">
