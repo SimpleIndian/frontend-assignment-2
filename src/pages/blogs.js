@@ -4,7 +4,7 @@ import Hero from "components/blogs/Hero";
 import Masonry from "react-masonry-css";
 import BlogCard from "components/shared/BlogCard";
 import { blogsData } from "data/blogsData";
-import Head from 'next/head'
+import Head from "next/head";
 
 const Blogs = () => {
   const breakpointColumnsObj = {
@@ -21,7 +21,7 @@ const Blogs = () => {
       </Head>
       <Header></Header>
       <Hero></Hero>
-      <section className="bg-[#1d1d1d]">
+      <section className="bg-opGray">
         <div className="max-w-6xl px-5 py-16 m-auto space-y-16 md:px-10">
           <Masonry
             breakpointCols={breakpointColumnsObj}

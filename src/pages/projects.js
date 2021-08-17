@@ -20,7 +20,7 @@ const ProjectType = () => {
       </Head>
       <Header></Header>
       <Hero></Hero>
-      <section className="bg-[#1D1D1D]">
+      <section className="bg-opGray">
         <div className="max-w-6xl px-5 py-16 m-auto space-y-16 md:px-10 ">
           <ProjectDetail></ProjectDetail>
           <div className="px-5 md:px-0">
