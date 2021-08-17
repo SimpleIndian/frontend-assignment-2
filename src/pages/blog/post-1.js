@@ -70,7 +70,7 @@ const Post1 = () => {
             <h2 className="mb-10 text-3xl text-center font-niviaBold">
               You Might Also Like :
             </h2>
-            <div className="space-y-5 md:flex md:justify-around md:space-x-5">
+            <div className="space-y-5 md:space-y-0 md:flex md:justify-around md:space-x-5">
               {data.map((each, index) => (
                 <InLink
                   className="relative block max-w-xs m-auto"
