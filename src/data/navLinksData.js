@@ -29,7 +29,7 @@ export const navLinksData = [
     hasElements: true,
     fullLink: "/blogs",
     links: [
-      { link: "#", label: "blog default" },
+      { link: "/blog/post-1", label: "first blog" },
       { link: "#", label: "blog style 01" },
       { link: "#", label: "blog style 02" },
       { link: "#", label: "project type", hasArrow: true },
@@ -51,9 +51,9 @@ export const navLinksData = [
     ],
   },
   {
-    heading: "pages",
+    heading: "contact us",
     hasElements: true,
-    fullLink: "#",
+    fullLink: "/contact",
     links: [
       { link: "#", label: "shop", hasArrow: true },
       { link: "#", label: "about us" },
