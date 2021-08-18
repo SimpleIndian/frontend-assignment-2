@@ -62,8 +62,8 @@ export const navLinksData = [
     ],
   },
   {
-    heading: "menu styles",
+    heading: "about us",
     hasElements: false,
-    fullLink: "#",
+    fullLink: "/about",
   },
 ];

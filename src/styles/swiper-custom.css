@@ -7,3 +7,23 @@
   opacity: 1;
   background: var(--swiper-pagination-color, white);
 }
+
+.swiper-button-prev {
+  color: white;
+  top: 80%;
+  left: 10%;
+}
+.swiper-button-next {
+  color: white;
+  top: 80%;
+  left: 15%;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+}

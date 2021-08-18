@@ -1,4 +1,4 @@
-const { BsChevronRight } = require("react-icons/bs");
+import { BsChevronRight } from "react-icons/bs";
 
 const Form = () => {
   return (
