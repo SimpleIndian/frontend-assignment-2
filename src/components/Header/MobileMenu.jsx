@@ -18,7 +18,7 @@ const MobileMenu = ({ isOpen }) => {
       }`}
     >
       <div className="p-5 mt-16 ">
-        <Accordion className="space-y-10 transition-all">
+        <Accordion className="space-y-10 transition-all" allowZeroExpanded>
           {navLinksData.map((each, index) =>
             each.hasElements ? (
               <AccordionItem key={index}>
