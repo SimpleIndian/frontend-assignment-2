@@ -17,16 +17,35 @@ const NavLinks = ({ fullLink, navHeading, dropLinks, hasElements }) => {
           {navHeading}
           {hasElements && <RiArrowDownSLine color="white" className="ml-1" />}
         </InLink>
-        <ul className="absolute left-0 hidden px-5 font-light bg-gray-900 divide-y divide-gray-300 min-w-max top-6 group-hover:block">
+        <ul className="absolute left-0 hidden px-5 font-light bg-gray-900 divide-y divide-gray-300 min-w-[200px] top-6 group-hover:block">
           {dropLinks &&
             dropLinks.map((each, index) => (
-              <li className="py-3" key={index}>
+              <li
+                className={`relative py-3 ${
+                  each.hasMoreItems ? "deep-nest" : ""
+                }`}
+                key={index}
+              >
                 <InLink href={each.link} className="flex items-center">
                   {each.label}
-                  {each.hasArrow && (
+                  {each.hasMoreItems && (
                     <RiArrowRightSLine color="white" className="ml-1" />
                   )}
                 </InLink>
+                {each.hasMoreItems && (
+                  <ul className="absolute top-0 hidden px-5 font-light bg-gray-900 divide-y divide-gray-300 -right-48 deep-nest-ele min-w-[200px]">
+                    {each.moreItems &&
+                      each.moreItems.map((each, index) => (
+                        <InLink
+                          className="block py-3"
+                          key={index}
+                          href={each.link}
+                        >
+                          {each.label}
+                        </InLink>
+                      ))}
+                  </ul>
+                )}
               </li>
             ))}
         </ul>

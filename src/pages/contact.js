@@ -1,8 +1,7 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
 import Hero from "components/contact/Hero";
 import Address from "components/contact/Address";
 import Form from "components/contact/Form";
+import Layout from "components/Layout";
 
 const address = [
   { title: " London, UK" },
@@ -12,8 +11,7 @@ const address = [
 
 const Contact = () => {
   return (
-    <>
-      <Header></Header>
+    <Layout>
       <div className="px-5 pt-10 pb-20 bg-opGray">
         <div className="max-w-6xl m-auto">
           <Hero></Hero>
@@ -35,8 +33,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-    </>
+    </Layout>
   );
 };
 

@@ -18,8 +18,33 @@
   top: 80%;
   left: 15%;
 }
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 80px;
+  left: -80px;
+  text-align: right;
+}
+#blog .swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}
+
+.deep-nest:hover .deep-nest-ele {
+  display: block;
+}
 
 @media (max-width: 768px) {
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 20px;
+    left: -20px;
+    text-align: right;
+  }
   .swiper-button-next {
     display: none;
   }

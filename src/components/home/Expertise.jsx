@@ -26,11 +26,11 @@ const Expertise = () => {
     observe();
   }, []);
   return (
-    <section className="ml-auto max-w-[1300px] pb-16 px-4">
+    <section className="px-4 pb-24 md:px-0">
       <h1 className="pl-5 text-2xl text-white md:pl-0 md:text-4xl font-butler">
         Expertise
       </h1>
-      <p className="flex my-10 text-gray-300 md:text-lg ">
+      <p className="flex mt-10 mb-20 text-gray-300 md:text-lg">
         <span className="mr-3">
           <img data-src="/quote.svg" alt="quote" className="lozad" />
         </span>
@@ -38,9 +38,9 @@ const Expertise = () => {
         distinctio <br />
         dolorum tempore enim expedita doloremque eaque
       </p>
-      <div className="grid grid-cols-1 p-5 md:p-0 md:grid-cols-4 gap-y-8">
+      <div className="grid grid-cols-1 p-5 md:p-0 md:grid-cols-4 gap-y-8 md:gap-x-10 gap-x-0">
         {experts.map((each, index) => (
-          <div className="text-white md:w-[250px]" key={index}>
+          <div className="text-white" key={index}>
             <img
               data-src={`/home/expert/exp-${index}.svg`}
               alt="expert"

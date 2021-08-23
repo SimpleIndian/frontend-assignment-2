@@ -10,7 +10,6 @@ const Hero = () => {
 
   return (
     <section className="relative">
-      <Social className="absolute z-10 top-1/2 left-5"></Social>
       <div className="relative w-full">
         <img
           data-src="/about/hero.png"

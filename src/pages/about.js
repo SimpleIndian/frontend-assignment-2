@@ -1,9 +1,8 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
 import Hero from "components/about/Hero";
 import PersonaCard from "components/about/PersonaCard";
 import Card from "components/about/Card";
 import Magzine from "components/about/Magzine";
+import Layout from "components/Layout";
 
 const blog = ["Respondeam", "Commodo", "Pergamque"];
 const featureSec = [
@@ -15,12 +14,11 @@ const featureSec = [
 
 const About = () => {
   return (
-    <div>
-      <Header></Header>
+    <Layout>
       <Hero></Hero>
       <div className="py-20 bg-opGray md:-mt-40">
-        <div className="max-w-[1300px] ml-auto ">
-          <div className="px-4 space-y-8 md:flex md:px-8 md:space-y-0">
+        <div className="m-auto max-w-7xl ">
+          <div className="px-4 pb-20 space-y-8 md:flex md:px-8 md:space-y-0">
             {blog.map((each, index) => (
               <PersonaCard title={each} key={index} index={index} />
             ))}
@@ -40,8 +38,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-    </div>
+    </Layout>
   );
 };
 

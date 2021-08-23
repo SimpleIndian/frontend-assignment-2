@@ -22,13 +22,14 @@ const blogData = [
 
 const BlogSection = () => {
   return (
-    <section className="ml-auto max-w-[1300px] pb-16 grid md:grid-cols-3 grid-cols-1 gap-y-8 justify-items-center md:justify-items-start">
+    <section className="grid grid-cols-1 px-10 pb-24 md:px-0 md:grid-cols-3 gap-y-8 md:gap-x-16 justify-items-center md:justify-items-start">
       {blogData.map((each, index) => (
         <BlogCard
           postDescription={each.description}
           postImg={each.image}
           postTitle={each.title}
           key={index}
+          index={index}
         />
       ))}
     </section>

@@ -2,9 +2,9 @@ import PhotoGrid from "./PhotoGrid";
 
 const PhotoGraphy = () => {
   return (
-    <section className=" ml-auto max-w-[1300px] py-16 text-white px-4">
+    <section className="px-4 pb-24 md:px-0">
       <h1 className="text-4xl font-butler">Photography</h1>
-      <p className="flex my-10 text-lg text-gray-300">
+      <p className="flex mt-10 mb-20 text-lg text-gray-300">
         <span className="mr-3">
           <img src="/quote.svg" alt="quote" loading="lazy" />
         </span>

@@ -1,17 +1,16 @@
-import Social from "components/Social";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper/core";
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 
 const Hero = () => {
-  SwiperCore.use([Pagination]);
+  SwiperCore.use([Pagination, Autoplay]);
 
   return (
     <section className="relative">
-      <Social className="absolute z-10 bottom-10 left-5"></Social>
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
         direction="horizontal"
+        autoplay
         pagination={{
           clickable: true,
         }}
@@ -33,8 +32,8 @@ const Hero = () => {
                 Ut porta iacculis tempus. Aenean congue metus elementum, posuere
                 lectus
               </h1>
-              <button className="flex items-center px-2 py-1 rounded-full md:px-4 md:py-2 ring-2 ring-white">
-                <span className="block w-5 h-[1px] bg-white mr-1"></span>
+              <button className="flex items-center px-2 py-1 rounded-full md:px-4 md:py-2 ring-2 ring-white hover:bg-white group hover:text-primary">
+                <span className="block w-5 h-[1px] bg-white mr-1 group-hover:bg-primary"></span>
                 view project
               </button>
             </div>
@@ -57,8 +56,8 @@ const Hero = () => {
                 Ut porta iacculis tempus. Aenean congue metus elementum, posuere
                 lectus
               </h1>
-              <button className="flex items-center px-2 py-1 rounded-full md:px-4 md:py-2 ring-2 ring-white">
-                <span className="block w-5 h-[1px] bg-white mr-1"></span>
+              <button className="flex items-center px-2 py-1 rounded-full md:px-4 md:py-2 ring-2 ring-white hover:bg-white group hover:text-primary">
+                <span className="block w-5 h-[1px] bg-white mr-1 group-hover:bg-primary"></span>
                 view project
               </button>
             </div>

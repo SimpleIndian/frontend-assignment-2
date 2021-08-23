@@ -7,7 +7,7 @@ export const navLinksData = [
     links: [
       { link: "#", label: "dark" },
       { link: "#", label: "light" },
-      { link: "#", label: "video elements", hasArrow: true },
+      { link: "#", label: "video elements"},
     ],
   },
   {
@@ -21,7 +21,15 @@ export const navLinksData = [
       { link: "#", label: "small-lightbox" },
       { link: "#", label: "masnoary normal" },
       { link: "#", label: "masnoary small" },
-      { link: "#", label: "project type", hasArrow: true },
+      {
+        link: "#",
+        label: "project type",
+        hasMoreItems: true,
+        moreItems: [
+          { link: "#", label: "drop" },
+          { link: "#", label: "drop2" },
+        ],
+      },
     ],
   },
   {
@@ -32,7 +40,7 @@ export const navLinksData = [
       { link: "/blog/post-1", label: "first blog" },
       { link: "#", label: "blog style 01" },
       { link: "#", label: "blog style 02" },
-      { link: "#", label: "project type", hasArrow: true },
+      { link: "#", label: "project type"},
     ],
   },
   {
@@ -55,7 +63,7 @@ export const navLinksData = [
     hasElements: true,
     fullLink: "/contact",
     links: [
-      { link: "#", label: "shop", hasArrow: true },
+      { link: "#", label: "shop"},
       { link: "#", label: "about us" },
       { link: "#", label: "contact us" },
       { link: "#", label: "contact me" },

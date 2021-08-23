@@ -5,6 +5,7 @@ import Masonry from "react-masonry-css";
 import BlogCard from "components/shared/BlogCard";
 import { blogsData } from "data/blogsData";
 import Head from "next/head";
+import Layout from "components/Layout";
 
 const Blogs = () => {
   const breakpointColumnsObj = {
@@ -19,30 +20,30 @@ const Blogs = () => {
       <Head>
         <title>Blogs - Best India</title>
       </Head>
-      <Header></Header>
-      <Hero></Hero>
-      <section className="bg-opGray">
-        <div className="max-w-6xl px-5 py-16 m-auto space-y-16 md:px-10">
-          <Masonry
-            breakpointCols={breakpointColumnsObj}
-            className="flex w-auto -ml-7 "
-            columnClassName="pl-7 bg-clip-padding"
-          >
-            {blogsData &&
-              blogsData.map((each, index) => (
-                <div key={index} className="mb-10">
-                  <BlogCard
-                    className="m-auto"
-                    postDescription={blogsDesc}
-                    postTitle={each.title}
-                    postImg={`/all-blogs/b${index}.png`}
-                  />
-                </div>
-              ))}
-          </Masonry>
-        </div>
-      </section>
-      <Footer></Footer>
+      <Layout>
+        <Hero></Hero>
+        <section className="bg-opGray">
+          <div className="max-w-6xl px-5 py-16 m-auto space-y-16 md:px-10">
+            <Masonry
+              breakpointCols={breakpointColumnsObj}
+              className="flex w-auto -ml-7 "
+              columnClassName="pl-7 bg-clip-padding"
+            >
+              {blogsData &&
+                blogsData.map((each, index) => (
+                  <div key={index} className="mb-10">
+                    <BlogCard
+                      className="m-auto"
+                      postDescription={blogsDesc}
+                      postTitle={each.title}
+                      postImg={`/all-blogs/b${index}.png`}
+                    />
+                  </div>
+                ))}
+            </Masonry>
+          </div>
+        </section>
+      </Layout>
     </>
   );
 };

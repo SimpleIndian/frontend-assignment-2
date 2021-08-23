@@ -7,7 +7,7 @@ const Subscribe = () => {
     observe();
   }, []);
   return (
-    <section className="ml-auto max-w-[1300px] pb-16 text-white relative pl-8 md:pl-0 h-[400px] md:h-auto">
+    <section className="text-white relative pl-8 md:pl-0 h-[400px] md:h-auto">
       <img
         data-src="/home/sub.png"
         alt="home women"

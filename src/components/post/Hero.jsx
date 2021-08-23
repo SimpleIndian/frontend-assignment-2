@@ -1,17 +1,17 @@
 import Social from "components/Social";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper/core";
+import SwiperCore, { Pagination, Autoplay } from "swiper/core";
 
 const Hero = () => {
-  SwiperCore.use([Pagination]);
+  SwiperCore.use([Pagination, Autoplay]);
 
   return (
-    <section className="relative px-5 py-10 md:py-32 bg-opGray">
-      <Social className="absolute z-10 top-1/2 left-5"></Social>
+    <section className="relative px-5 py-10 md:py-32 bg-opGray" id="blog">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
         direction="horizontal"
+        autoplay
         pagination={{
           clickable: true,
         }}

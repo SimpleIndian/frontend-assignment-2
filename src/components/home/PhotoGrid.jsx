@@ -7,34 +7,10 @@ const PhotoGrid = () => {
     observe();
   }, []);
   return (
-    <div className="grid px-3 md:grid-rows-3 gap-y-10">
-      <div className="grid grid-cols-2 gap-5 md:flex md:flex-wrap md:space-x-4">
-        {[1, 2, 3, 4].map((each) => (
-          <img
-            data-src={`/home/grid/first-${each}.png`}
-            key={each}
-            className="lozad"
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-2 gap-5 md:flex md:flex-wrap md:ml-10 md:space-x-4">
-        {[1, 2, 3, 4, 5].map((each) => (
-          <img
-            data-src={`/home/grid/second-${each}.png`}
-            key={each}
-            className="lozad"
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-2 gap-5 md:flex md:flex-wrap md:space-x-4">
-        {[1, 2, 3, 4].map((each) => (
-          <img
-            data-src={`/home/grid/third-${each}.png`}
-            key={each}
-            className="lozad"
-          />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-rows-3 gap-y-10 md:grid-cols-2 justify-items-center">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((each) => (
+        <img data-src="/home/grid/first-1.png" key={each} className="lozad" />
+      ))}
     </div>
   );
 };

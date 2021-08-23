@@ -3,7 +3,6 @@ import Social from "components/Social";
 const Hero = () => {
   return (
     <div className="md:h-[75vh] relative bg-opGray h-[50vh]">
-      <Social className="absolute z-10 bottom-10 left-5"></Social>
       <div className="absolute md:left-[10%] p-5 text-white md:top-1/3 max-w-4xl top-[10%] space-y-5">
         <h1 className="mb-3 text-2xl font-bold md:mt-2 md:mb-10 md:text-5xl font-niviaBold">
           Events

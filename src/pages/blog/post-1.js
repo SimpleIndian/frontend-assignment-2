@@ -1,5 +1,3 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
 import Hero from "components/post/Hero";
 import Article from "components/post/Article";
 import ShareArea from "components/post/ShareArea";
@@ -10,6 +8,7 @@ import InLink from "components/shared/InLink";
 import TagBtn from "components/shared/TagBtn";
 import { useEffect } from "react";
 import lozad from "lozad";
+import Layout from "components/Layout";
 
 const data = [
   {
@@ -32,8 +31,7 @@ const Post1 = () => {
     observe();
   }, []);
   return (
-    <>
-      <Header></Header>
+    <Layout>
       <Hero></Hero>
       <div className="p-5 bg-opGray">
         <div className="max-w-4xl m-auto">
@@ -94,9 +92,7 @@ const Post1 = () => {
           </div>
         </div>
       </div>
-
-      <Footer></Footer>
-    </>
+    </Layout>
   );
 };
 

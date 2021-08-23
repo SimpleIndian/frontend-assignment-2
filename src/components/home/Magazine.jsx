@@ -7,7 +7,7 @@ const Magazine = () => {
     observe();
   }, []);
   return (
-    <section className="ml-auto max-w-[1300px] pb-16 text-white relative pl-8 md:pl-0 h-[400px] md:h-auto">
+    <section className=" pb-24 text-white relative pl-8 md:pl-0 h-[400px] md:h-auto">
       <img
         data-src="/home/women.png"
         alt="home women"
